@@ -1,0 +1,28 @@
+
+body{
+    background-color: rgba(0, 255, 255, 0.552);
+}
+h3{
+    font-family: Calibri; 
+    font-size: 25pt;         
+    font-style: normal; 
+    font-weight: bold; 
+    color:SlateBlue;
+    text-align: center; 
+    text-decoration: underline
+  }
+  
+  table{
+    font-family: Calibri; 
+    color:rgb(255, 255, 255); 
+    font-size:12pt; 
+    font-style: normal;
+    font-weight: bold;
+    text-align:left; 
+    background-color: SlateBlue; 
+    border-collapse: collapse; 
+  }
+  table.inner{
+    border: 10px
+  }
+  

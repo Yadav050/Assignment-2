@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background:#203f68;
+    background-image: url(wave-haikei.svg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size:contain;
+}
+ 
+/* navigation start */
+ .nav {
+   position: relative;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   list-style-type:none;
+   word-spacing:50px;
+   padding-top:40px;
+}
+nav li {
+    list-style:none;
+}
+nav li a {
+   position:relative;
+   font-size:2em;
+   text-decoration: none;
+   letter-spacing:3px;
+   text-transform:uppercase;
+   color:transparent;
+   -webkit-text-stroke:1px rgb(3, 3, 3);
+}
+nav li a::before {
+    content: attr(data-text);
+    position:absolute;
+    color: var(--clr);
+    width:0;
+    overflow: hidden;
+    transition: 1s;
+    border-right:2px solid vat(--clr);
+    -webkit-text-stroke:1px var(--clr);
+}
+nav li a:hover::before{
+    width:100%;
+    filter: drop-shadow(0 0 30px var(--clr));
+}
+/* navigation end */
+
+.bca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:100px;
+}
+.bca img{
+    padding-left:30px;
+    opacity:80%;
+}
+.bca div{
+    width: 600px;
+    padding-right:0px ;
+    padding-top:10px;
+}
+.mca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:50px;
+}
+.mca img{
+    padding-right:30px;
+}
+.mca div{
+    width: 600px;
+    padding-left:50px ;
+    padding-top:10px;
+}
+.btn{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.btn a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: crimson;
+    color: #fff;
+    height: 25px;
+    width: 200px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 5px;
+}
+ .btn a:hover{
+    color: crimson;
+    background-color: #fff;
+ }
+
+/* footer start */
+footer div {
+    background-color:#55cd83b6;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+}
+/* footer ends */
